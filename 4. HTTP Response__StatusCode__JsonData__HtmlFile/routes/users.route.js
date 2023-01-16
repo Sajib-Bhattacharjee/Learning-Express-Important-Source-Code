@@ -8,6 +8,14 @@ router.get("/register", (req, res) => {
 router.get("/login", (req, res) => {
   res.status(203);
   res.sendfile("./views/login.html");
+  
+  
+   // Generate Cookie && Headers && Clear Cookie.
+   //res.cookie("name", "Sajib Bhattacharjee");
+   //res.cookie("age", "23");
+   //res.clearCookie("name");
+   //res.append("id", "70");
+   //res.end();
 });
 
 router.get("/other", (req, res) => {
