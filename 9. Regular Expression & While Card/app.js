@@ -8,7 +8,7 @@ app.get("/products/:title([a-zA-Z0-9]+)", (req, res) => {
 
 //While Card.
 app.get("*", (req, res) => {
-  res.status(404).json({
+  res.status(404).send({
     message: "404!!! Not a valid route",
   });
 });
